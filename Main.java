@@ -97,6 +97,12 @@ public class Main {
         String greeting = "Hello World";
         System.out.println(greeting);
 
-        
+// Java Operators
+
+        int x = 100 + 50;
+        --x; //decrement operator
+        System.out.println(x);
+        ++x;
+        System.out.println(x);
         }
 }
