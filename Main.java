@@ -104,5 +104,120 @@ public class Main {
         System.out.println(x);
         ++x;
         System.out.println(x);
+
+// Java Strings
+
+        String txt = "ABCDEFGHIJKLMNOPQRTSUVWXYZ";
+        System.out.println("The length of the txt string is: " + txt.length());
+        System.out.println(txt.toUpperCase()); //outputs everthing in uppercase
+        System.out.println(txt.toLowerCase()); //outputs everything in lowercase
+
+
+//Finding a character in the string
+
+        String pqr = "Please locate where 'locate' occurs";
+        System.out.println(pqr.indexOf("locate")); //output 7 as the java counts the value from 0
+
+
+//String Concatenation
+
+        String aName = "Bhargav";
+        String bName = "Solanki";
+        System.out.println(aName + " " + bName);
+        System.out.println(aName.concat(bName));
+
+        /*
+         * /n for newline
+         * /r for Carriage return
+         * /t for Tab
+         * /b Backspace
+         * /f for Form feed
+         */
+
+        int randomNum = (int) (Math.random() * 101);
+        System.out.println(randomNum);
+
+        //Java Boolean Example
+        int myAge = 25;
+        int votingAge = 18;
+        //System.out.println(myAge >= votingAge);
+        
+        //If else condition
+        if (myAge >= votingAge){
+            System.out.println("Old enough to vote");
+        }
+        else {
+            System.out.println("Not old enough to vote");
+        } 
+
+//The else if statement
+/*
+ * if (condition1){
+ *  //block of the code to be executed if condition1 is true
+ * } else if (condition2) {
+ *  //block of the code to be executed if the condition2 is true 
+ * } else {
+ *  // block of code to be executed if the condition1 is false and condition2 is false
+ * }
+ */ 
+ 
+ //short hand if else : variable = (condition) ? expressionTrue : expressionFalse;
+        int time = 20;
+        String result = (time < 18)? "Good day." : "Good evening.";
+        System.out.println(result); 
+
+//Java Switch
+// switch(expression) {
+//     case x:
+//       // code block
+//       break;
+//     case y:
+//       // code block
+//       break;
+//     default:
+//       // code block
+//   }
+
+        int day = 4;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default: //if there is no case match to run, default will be executed.
+                System.out.println("Looking forward to the weekend");
+            } //output "Thursday" (day 4)
+
+
+//While Loop
+
+        /*
+         * while (condition)
+         * //code block to be executed
+         */
+
+        int i = 0;
+        while (1 < 5) {
+            System.out.println(i);
+            i++;
+        }
+
         }
 }
