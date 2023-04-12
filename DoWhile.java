@@ -24,5 +24,22 @@ public class DoWhile {
             }
         }
 
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (String n : cars)
+            System.out.println(n);
+
+        for (int a = 0; a < 10; a++) {
+            if (i == 4) {
+                break; //the break statement can also be used to jump out of a loop
+            }
+            System.out.println(a);
+        }
+
+        for (int c = 0; c < 10; c++) {
+            if (c == 4) {
+                continue;
+            }
+            System.out.println(c);
+        }
     }
 }
